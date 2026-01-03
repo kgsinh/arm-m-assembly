@@ -20,5 +20,29 @@ Refer to the following resource when progressing through the course:
 ### Cortex-M3 Documentation
 1. [Cortex-M3 Devices Generic User Guide](https://developer.arm.com/documentation/dui0552/latest/)
 
+# Instructions to run locally on windows using WSL
+
+sudo apt-get update
+sudo apt-get install --no-install-recommends -y \
+  sudo \
+  binutils-common \
+  make \
+  git-core \
+  wget \
+  tree \
+  build-essential \
+  python3 \
+  python3-dev \
+  python3-pip \
+  binutils \
+  qemu-system-arm \
+  gcc-arm-none-eabi \
+  gdb-multiarch
+
+pip3 install pygments --break-system-packages && wget -P ~ https://git.io/.gdbinit
+
+
+
+
 # Copyright
 Copyright © 2025 pyjamabrah.com. All Rights Reserved.
