@@ -5,3 +5,4 @@ foo.o
 foo.map
 foo.bin
 foo.hex
+.gdb_history

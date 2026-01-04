@@ -1,6 +1,7 @@
 MEMORY
 {
-    MEM : ORIGIN = 0x0, LENGTH = 0x4000
+    MEM : ORIGIN = 0x00, LENGTH = 0x4000
+    RAM : ORIGIN = 0x2000000, LENGTH = 0x800
 }
 
 SECTIONS
@@ -9,4 +10,8 @@ SECTIONS
         *(.vectors*)
         *(.text*)
     } > MEM
+
+    .data : {
+        *(.data*)
+    } > RAM AT > RAM
 }
