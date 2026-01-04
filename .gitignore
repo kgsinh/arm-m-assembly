@@ -1,0 +1,7 @@
+foo.elf
+foo.elf.debug
+foo.elf.lst
+foo.o
+foo.map
+foo.bin
+foo.hex
